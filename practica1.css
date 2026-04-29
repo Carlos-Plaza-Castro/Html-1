@@ -1,0 +1,81 @@
+/*Practica 1 Carlos Plaza*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+/* Centrar títulos */
+h1, h2 , h3, h4{
+    text-align: center;
+}
+
+/* Centrar tablas */
+table {
+    margin: 30px auto; /* auto = centrado */
+    border-collapse: collapse;
+}
+
+/* Caption alineado a la izquierda */
+caption {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Bordes y estilo en filas y columnas */
+th, td {
+    border: 1px solid #1b7acd;
+    padding: 10px;
+    text-align: center;
+}
+/*Tabla 1*/
+/* Color azul claro en cabeceras */
+/*Para seleccionar la primera fila que me gustan de la tabla 1 y elijo el color de fondo*/
+table:nth-of-type(1) th:nth-child(1),
+table:nth-of-type(1) th:nth-child(2),
+table:nth-of-type(1) th:nth-child(3),
+table:nth-of-type(1) th:nth-child(4){
+    background-color: #A4C2F7;
+}
+/* Color azul claro para la primera columna*/
+table tr td:first-child {
+    background-color: #A4C2F7; 
+    font-weight: bold;
+}
+/* Color azul para las celdas*/
+td {
+    background-color: #C1D3F6;
+}
+ /*Tabla 2*/
+/* Color azul claro para la primera columna*/
+table:nth-of-type(2) th:nth-child(1){
+    background-color: #A4C2F7;
+}
+/* Columna de Mike (celdas columnas 2 y 3) */
+table:nth-of-type(2) td:nth-child(2),
+table:nth-of-type(2) td:nth-child(3) {
+    background-color: #AAD8BE ; 
+/*1 Fila de la columna 2 y 3*/
+}
+table:nth-of-type(2) th:nth-child(2),
+table:nth-of-type(2) th:nth-child(3) {
+    background-color: #90C9BF;
+}
+
+table:nth-of-type(2) tr:nth-child(1) th:nth-child(2) {
+    background-color: #90C9BF; 
+}
+
+/* Columna de Tara (celdas columnas 4 y 5) */
+table:nth-of-type(2) td:nth-child(4),
+table:nth-of-type(2) td:nth-child(5){
+    background-color: #C6BCBE ; 
+}
+table:nth-of-type(2) tr:nth-child(1) th:nth-child(3) {
+    background-color: #979DAF; 
+}
+/*1 Fila de la columna 4 y 5*/
+table:nth-of-type(2) th:nth-child(4),
+table:nth-of-type(2) th:nth-child(5) {
+    background-color: #979DAF ;
+}
