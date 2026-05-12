@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio – Carlos Plaza Castro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="Practica2.css" />
+</head>
+<body>
+  <div class="page">
+    <!-- Cabecera -->
+    <header>
+      <div class="logo">Carlos Plaza Castro</div>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Intro -->
+    <main id="inicio" class="hero">
+      <div>
+        <div class="hero-eyebrow">Escritor &amp; Bloguero</div>
+        <h1 class="hero-title">Carlos Plaza Castro</h1>
+        <p class="hero-subtitle">Historias que conectan, palabras que perduran.</p>
+        <p class="hero-tagline">
+          Escribo relatos, ensayos y crónicas que exploran lo invisible del día a día:
+          la memoria, el silencio y los pequeños gestos que nos cambian.
+        </p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn-primary">Ver portfolio</a>
+          <a href="#contacto" class="btn-ghost">Proponer una colaboración</a>
+        </div>
+        <p class="hero-meta">Disponible para encargos editoriales, artículos y proyectos de autor.</p>
+      </div>
+      <div class="hero-photo">
+        <img src="Imagenes/yo.png" alt="Yo" height="300" >
+      </div>
+    </main>
+
+    <!-- PROYECTOS DESTACADOS -->
+    <section id="proyectos">
+      <div class="section-header">
+        <h2 class="section-title">Entradas destacadas</h2>
+        <p class="section-subtitle">Una selección de textos recientes y proyectos personales.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="Imagenes/fono.png" alt="fono" height="280" width="320" >
+          </div>
+          <h3 class="project-title">El arte de lo invisible</h3>
+          <p class="project-desc">
+            Una exploración narrativa sobre los pequeños detalles que pasan desapercibidos,
+            pero que sostienen nuestra vida cotidiana.
+          </p>
+          <p class="project-meta">Relato · 12 min de lectura</p>
+          <a href="#" class="project-link">Leer más</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb">   
+            <img src="Imagenes/notas.png" alt="notas" height="280" width="320"  >  
+          </div>
+          <h3 class="project-title">Crónicas del silencio</h3>
+          <p class="project-desc">
+            Serie de ensayos sobre la soledad, la pausa y la necesidad de escuchar
+            lo que no se dice.
+          </p>
+          <p class="project-meta">Ensayo · Serie en curso</p>
+          <a href="#" class="project-link">Leer más</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb">  
+            <img src="Imagenes/calle.png" alt="calle" height="280" width="320"  >
+          </div>
+          <h3 class="project-title">Memoria sombría</h3>
+          <p class="project-desc">
+            Un relato corto que cruza las sombras del pasado con la luz tenue
+            de lo que aún puede cambiar.
+          </p>
+          <p class="project-meta">Relato corto · Publicado en blog</p>
+          <a href="#" class="project-link">Leer más</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi">
+      <div class="section-header">
+        <h2 class="section-title">Sobre mí</h2>
+        <p class="section-subtitle">Quién soy, qué escribo y cómo puedo ayudarte.</p>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-text">
+          <p>
+            Soy Carlos Plaza Castro, un apasionado de la palabra escrita y de las historias
+            que se esconden en lo cotidiano. Escribo relatos, ensayos y piezas breves
+            que buscan dejar una huella emocional en quien las lee.
+          </p>
+          <p>
+            A través de mi blog y de mis proyectos editoriales exploro temas como la memoria,
+            el silencio, la identidad y las pequeñas decisiones que cambian el rumbo de una vida.
+          </p>
+          <p class="muted">
+            Colaboro con medios, marcas y proyectos culturales que necesitan una voz
+            narrativa clara, honesta y con cuidado por el detalle.
+          </p>
+          <p class="about-meta">
+            Disponible para: artículos, relatos por encargo, textos para proyectos culturales,
+            newsletters y acompañamiento editorial.
+          </p>
+        </div>
+        <div>
+          <img src="Imagenes/telef.png" alt="fono" height="280" width="400" >
+          <div class="about-tags">
+            
+            <span class="tag">Relatos</span>
+            <span class="tag">Ensayos</span>
+            <span class="tag">Narrativa personal</span>
+            <span class="tag">Edición de textos</span>
+            <span class="tag">Contenido editorial</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO / CTA + FORMULARIO -->
+<section id="contacto">
+  <div class="cta">
+    <h2 class="cta-title">¿Hablamos de tu próximo proyecto?</h2>
+    <p class="cta-text">
+      Cuéntame qué necesitas: un relato, un artículo o un proyecto editorial más largo.
+      Responderé lo antes posible.
+    </p>
+
+    <form class="contact-form" action="#" method="post">
+      <div class="form-row">
+        <div class="form-field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+        <div class="form-field">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="asunto">Asunto</label>
+        <input type="text" id="asunto" name="asunto" />
+      </div>
+
+      <div class="form-field">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary">Enviar mensaje</button>
+    </form>
+  </div>
+</section>
+
+
+    <!-- Pie -->
+    <footer>
+      <span>© <span id="year"></span> Carlos Plaza Castro.</span>
+      <span>Blog · Portfolio · Proyectos editoriales</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
